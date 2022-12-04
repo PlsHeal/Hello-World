@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+.container {
+    font-family: monospace;
+    font-size: xx-large;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 97.5vh;
+    border: 1px solid darkgreen;
+    animation: 15s changeColor infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        border-color: darkgreen;
+        color: darkgreen;
+    }
+    10% {
+        border-color: yellow;
+        color: yellow;
+    }
+    30% {
+        border-color: red;
+        color: red;
+    }
+    50% {
+        border-color: blue;
+        color: blue;
+    }
+    80% {
+        border-color: aquamarine;
+        color: aquamarine;
+    }
+    100% {
+        border-color: darkgreen;
+        color: darkgreen;
+    }
+}
